@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		//Jerzy Vletter 99052114	
+	</script>
+		<head>
+	   	<title>pizza order</title>
+		</head>
+			<body>
+		
+				<script> 
+		    	 var SPamount = prompt("hoeveel kleine pizza's zou u willen hebben? (een kleine pizza is €5,-)");
+		     	var MPamount = prompt("hoeveel medium pizza's zou u willen hebben? (een medium pizza is €10,-)");
+		     	var LPamount = prompt("hoeveel grote pizza's zou u willen hebben? (een grote pizza is €15,-)");
+		     	//Dit zijn de prompt popups die de vraag stellen hoeveel pizza's de besteller wil hebben, de popups komen een voor een op het scherm en dan kan je venster voor venster invullen hoeveel pizza's je wilt.
+             
+		     	const SizeSmall =5;
+		     	const SizeMedium =10;
+		     	const SizeLarge =15;
+		     	//Dit zijn de constante, deze cijfers kunnen (en mogen) niet worden verandert, dit zijn namenlijk de prijzen van de pizza's.
+
+		     	var totaal =(SizeSmall*SPamount + SizeMedium*MPamount + SizeLarge*LPamount);
+		     	//Dit is de berekening die aan het eind van het invullen van de prompts in werking treed, deze berekening rekend uit hoeveel de persoon moet betalen met het ingevulde aantal pizza's in elke categorie van groote.
+
+		     	document.write ("Het aantal kleine pizza(s):" + ' ' + SPamount)
+		     	document.write ("<br>Prijs voor de kleine pizza(s) " + '-' + '€' + SPamount * SizeSmall + ',-');
+   				
+   				document.write ("<br>het aan middle pizza(s):" + ' ' + MPamount)
+		     	document.write ("<br>Prijs voor een middle pizza(s)" + '-' + '€' + MPamount * SizeMedium + ',-');
+
+		     	document.write ("<br>het aantal grote pizza(s):" + ' ' + LPamount)
+		     	document.write ("<br>Prijs voor een grote pizza(s)"  + '-' + '€' + LPamount * SizeLarge + ',-');
+
+		     	//Dezelijnen code zorgen ervoor dat welk nummer je ook heb ingevult in de prompts die vragen hoeveel pizza's je wilt, dat de uigerekende prijs van het ingevulde aantal pizza's de prijs bij de groote van de pizza's op het scherm komt te staan samen met de lijn 'prijs voor de (groote van de pizza) pizza(s)'
+
+		     	document.write ('<hr>');
+		     	//Dit creeërt een lijntje tussen de boven liggende code en de code die hieronder staat.
+
+		     	document.write ('Totaal =' + ' ' + '€' + totaal + ',-');
+		     	//Dit rekend het totaal bedrag uit een het einde van alle berekeningen.
+
+				</script>
+			</body>	
+</html>
+ 
+   
